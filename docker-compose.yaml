@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  my-service:
+    image: "hb:hack-box-api"
+    ports:
+      - "5050:5050"

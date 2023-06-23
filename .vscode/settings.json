@@ -1,0 +1,58 @@
+{
+  "calva.customREPLCommandSnippets": [
+    {
+      "name": "Start hack-box Server",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(start)"
+    },
+    {
+      "name": "Stop hack-box Server",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(stop)"
+    },
+    {
+      "name": "Restart hack-box Server",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(restart)"
+    },
+    {
+      "name": "Open portal",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(open-portal)"
+    },
+    {
+      "name": "Clear portal",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(clear-portal)"
+    },
+    {
+      "name": "Close portal",
+      "ns": "user",
+      "repl": "clj",
+      "snippet": "(close-portal)"
+    },
+    {
+      "name": "Print env vars",
+      "ns": "props",
+      "repl": "clj",
+      "snippet": "(print-env-vars)"
+    }
+  ],
+  "calva.replConnectSequences": [
+    {
+      "name": "Hack Box - Server",
+      "autoSelectForJackIn": true,
+      "projectType": "Leiningen",
+      "afterCLJReplJackInCode": "(do ((requiring-resolve 'user/start)) (println \"Started Hack Box - API Server!\"))",
+      "menuSelections": {
+        "leinProfiles": ["dev"],
+        "leinAlias": null
+      }
+    }
+  ]
+}
